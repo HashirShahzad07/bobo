@@ -339,5 +339,28 @@ img#wondy-counter {
 section.deez-nut-section {
     margin: 0;
 }
+a.navbar-img-link.photo-link {
+  width: 33px;
+  margin: 0 auto;
+}
+
+.mmm {
+  display: none !important;
+}
+
+a.navbar-img-link.photo-link.mmmm {
+  display: none !important;
+}
+
+.container.d-flex {
+  align-items: center;
+  justify-content: end;
+}
+
+nav#navbar .container.d-flex {
+  display: flex;
+  position: relative;
+  left: -11px;
+}
 
 }
