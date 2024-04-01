@@ -1,0 +1,119 @@
+/* only for meme.html */
+a {
+  cursor: default !important;
+}
+
+#meme-canvas-wrapper {
+	position: relative;
+	display: block;
+	height: 100%;
+	/* max-width must equate the value of `WIDTH` in meme.js */
+	max-width: 711px;
+	margin: 20px auto 0;
+	padding: 5px;
+}
+
+#meme-canvas {
+	border: 4px solid #2390C1;
+	overflow: hidden;
+}
+
+.meme-canvas-btn {
+	border-radius: 40px;
+  padding: 8px 14px;
+	margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+#meme-canvas-save-btn {
+  color: white;
+	background-color: #344afb;
+  border: 1px solid darkblue;
+
+	&:hover {
+		background-color: darkblue;
+	}
+}
+
+#meme-canvas-bg-image-label {
+	display: inline-block;
+	margin: 0 auto;
+	background-color: #2390C1;
+	color: white;
+	text-align: center;
+	padding: 10px 20px;
+	border-radius: 6px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #344afb;
+	}
+}
+
+#meme-canvas-bg-image-input {
+	display: none;
+}
+
+#meme-canvas-bg-image-drag {
+	display: inline-block;
+	margin-left: 20px;
+	color: #344afb;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 6px;
+}
+
+#meme-item-menu {
+	display: none;
+	position: absolute;
+	width: 80px;
+	background-color: white;
+	box-shadow: 0 0 5px grey;
+	border-radius: 3px;
+}
+
+#meme-item-menu button {
+	width: 100%;
+	background-color: white;
+	border: none;
+	margin: 0;
+	padding: 10px;
+}
+
+#meme-item-menu button:hover {
+	background-color: lightgray;
+}
+
+#meme-hair-list {
+	margin: 40px auto 0;
+	max-width: 1200px;
+	padding: 0 50px;
+	text-align: center;
+
+	& > img {
+		height: 110px;
+		width: 180px;
+		margin: 10px;
+		padding: 10px;
+		background-color: #eee;
+		border-radius: 10px;
+		border-width: 2px;
+		border-color: transparent;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #ddd;
+			border-color: #344afb;
+		}
+
+		&.selected {
+			background-color: #344afb;
+		}
+	}
+}
